@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /pqr.html
+Sitemap: https://indisutex.github.io/indisutex/sitemap.xml
