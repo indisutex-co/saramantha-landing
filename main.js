@@ -82,10 +82,10 @@ function setAudience(aud) {
   const waLabel = document.querySelector('.wa-label');
   if (waFloat && waLabel) {
     if (isMayor) {
-      waFloat.href = 'https://wa.me/573000000000?text=Hola!%20Soy%20revendedor%20y%20quiero%20el%20listado%20de%20precios%20mayoristas%20📋';
+      waFloat.href = 'https://wa.me/573117757407?text=Hola!%20Soy%20revendedor%20y%20quiero%20el%20listado%20de%20precios%20mayoristas%20📋';
       waLabel.textContent = 'Precio mayorista';
     } else {
-      waFloat.href = 'https://wa.me/573000000000?text=Hola!%20Quiero%20ver%20las%20pijamas%20disponibles%20🌸';
+      waFloat.href = 'https://wa.me/573117757407?text=Hola!%20Quiero%20ver%20las%20pijamas%20disponibles%20🌸';
       waLabel.textContent = 'Pide ahora';
     }
   }
@@ -131,7 +131,7 @@ function calcUpdate() {
   // Actualizar enlace WA con los datos calculados
   const waBtn = document.getElementById('calc-wa-btn');
   if (waBtn) {
-    waBtn.href = `https://wa.me/573000000000?text=Hola!%20Calculé%20mi%20pedido%3A%20${units}%20unidades%20a%20${fmt(unitCost)}%20c/u%20=%20${fmt(invest)}%20de%20inversión.%20Quiero%20coordinar%20el%20pedido%20📦`;
+    waBtn.href = `https://wa.me/573117757407?text=Hola!%20Calculé%20mi%20pedido%3A%20${units}%20unidades%20a%20${fmt(unitCost)}%20c/u%20=%20${fmt(invest)}%20de%20inversión.%20Quiero%20coordinar%20el%20pedido%20📦`;
   }
 }
 
@@ -183,7 +183,7 @@ function openLb(idx) {
   const lbDetal = document.getElementById('lb-price-detal');
   if (lbMayor) lbMayor.textContent = (mayorPrices[idx]||'$8.500') + '/ud (x12+)';
   if (lbDetal) lbDetal.textContent = detalPrices[idx]||'$15.500';
-  if (lbWa) lbWa.href = `https://wa.me/573000000000?text=Hola!%20Me%20interesa%20el%20diseño%20${idx+1}%20📦%20¿Tienen%20disponibilidad%20y%20en%20qué%20tallas?`;
+  if (lbWa) lbWa.href = `https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20diseño%20${idx+1}%20📦%20¿Tienen%20disponibilidad%20y%20en%20qué%20tallas?`;
   lightbox?.classList.add('active');
   document.body.style.overflow = 'hidden';
   trackEvent('lightbox_open',{event_label:`design_${idx+1}`});
@@ -267,7 +267,7 @@ function showExit() {
         <span>→</span>
         <strong style="font-family:var(--font-display);font-size:1.4rem;color:var(--wine)">Ganás $84.000</strong>
       </div>
-      <a href="https://wa.me/573000000000?text=Hola!%20Vi%20la%20calculadora%20y%20quiero%20empezar%20con%201%20docena%20📦" class="exit-popup-cta" target="_blank" rel="noopener">Empezar con 1 docena</a>
+      <a href="https://wa.me/573117757407?text=Hola!%20Vi%20la%20calculadora%20y%20quiero%20empezar%20con%201%20docena%20📦" class="exit-popup-cta" target="_blank" rel="noopener">Empezar con 1 docena</a>
       <p class="exit-popup-note">Sin compromiso · Respondemos en &lt;1 hora</p>
     </div>`;
   document.body.appendChild(p);
