@@ -153,7 +153,11 @@ fbq('track', 'PageView');
   .cmp-ancla>div{padding:1.2rem!important}
   .cmp-ancla>div>div:last-child{font-size:2rem!important}
   .cmp-hero>div:first-child>div:nth-child(2)>span:first-child{font-size:2.5rem!important}
+  .pricing-desktop{display:none!important}
+  .pricing-mobile{display:block!important}
 }
+.pricing-mobile{display:none}
+.pricing-desktop{display:block}
 </style>
 </head>
 
@@ -744,7 +748,8 @@ fbq('track', 'PageView');
       <h2 class="section-title">Más unidades,<br/><em>más ganancia por unidad</em></h2>
     </div>
 
-    <div class="pricing-table-wrap reveal">
+    <!-- TABLA DESKTOP (oculta en móvil) -->
+    <div class="pricing-table-wrap reveal pricing-desktop">
       <table class="pricing-table" role="table" aria-label="Precios por volumen de compra">
         <thead>
           <tr>
@@ -786,7 +791,7 @@ fbq('track', 'PageView');
             <td>$420.000</td>
             <td>$1.008.000</td>
             <td class="gain-cell gain-big">$588.000</td>
-            <td><span class="margin-badge margin-hot">94%</span></td>
+            <td><span class="margin-badge margin-hot">140%</span></td>
             <td><a href="https://wa.me/573117757407?text=Hola!%20Quiero%20pedir%2024%20unidades%20(2%20docenas)%20💰" class="tbl-btn tbl-btn-hot" target="_blank" rel="noopener">Pedir</a></td>
           </tr>
           <tr class="tier-row">
@@ -796,7 +801,7 @@ fbq('track', 'PageView');
             <td>$792.000</td>
             <td>$2.016.000</td>
             <td class="gain-cell gain-big">$1.224.000</td>
-            <td><span class="margin-badge margin-hot">107%</span></td>
+            <td><span class="margin-badge margin-hot">154%</span></td>
             <td><a href="https://wa.me/573117757407?text=Hola!%20Quiero%20información%20para%20pedido%20de%2048%20unidades%20🏪" class="tbl-btn" target="_blank" rel="noopener">Consultar</a></td>
           </tr>
           <tr class="tier-row">
@@ -812,6 +817,181 @@ fbq('track', 'PageView');
         </tbody>
       </table>
       <p class="pricing-note">* Precios COP sin IVA · Ventas al detal calculadas con precio sugerido $42.000 · Tier entrada 6 und a $21.500/ud · Sujeto a disponibilidad de referencia</p>
+    </div>
+
+    <!-- CARDS MÓVIL (ocultas en desktop) -->
+    <div class="pricing-mobile">
+
+      <div class="tier-mobile-card reveal" style="background:var(--bg,#fff);border:1px solid rgba(139,90,120,.15);border-radius:16px;padding:1.4rem 1.5rem;position:relative">
+        
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+          <span style="font-size:.72rem;font-weight:700;background:#EEEDFE;color:#3C3489;padding:3px 10px;border-radius:20px;letter-spacing:.04em">PRUEBA</span>
+          <div style="text-align:right">
+            <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--wine);line-height:1">6 und</div>
+            <div style="font-size:.78rem;color:var(--muted)">Media docena</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">PRECIO/UD</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--wine)">$21.500</div>
+          </div>
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">INVERSIÓN</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--text)">$129.000</div>
+          </div>
+        </div>
+        <div style="background:rgba(139,90,120,.08);border-radius:10px;padding:.9rem 1rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+          <div>
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">GANANCIA POTENCIAL</div>
+            <div style="font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--wine)">$123.000</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">MARGEN</div>
+            <div style="font-size:1.3rem;font-weight:700;color:var(--wine)">95%</div>
+          </div>
+        </div>
+        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20pedir%206%20unidades%20para%20empezar%20📦" class="tbl-btn" target="_blank" rel="noopener" style="display:block;text-align:center;width:100%;text-align:center;padding:.65rem;border-radius:8px;display:block;font-size:.9rem">
+          Pedir
+        </a>
+      </div>
+
+      <div class="tier-mobile-card reveal" style="background:var(--bg,#fff);border:1px solid rgba(139,90,120,.15);border-radius:16px;padding:1.4rem 1.5rem;position:relative">
+        
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+          <span style="font-size:.72rem;font-weight:700;background:rgba(139,90,120,.12);color:var(--wine);padding:3px 10px;border-radius:20px;letter-spacing:.04em">INICIO</span>
+          <div style="text-align:right">
+            <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--wine);line-height:1">12 und</div>
+            <div style="font-size:.78rem;color:var(--muted)">1 docena</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">PRECIO/UD</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--wine)">$19.500</div>
+          </div>
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">INVERSIÓN</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--text)">$234.000</div>
+          </div>
+        </div>
+        <div style="background:rgba(139,90,120,.08);border-radius:10px;padding:.9rem 1rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+          <div>
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">GANANCIA POTENCIAL</div>
+            <div style="font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--wine)">$270.000</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">MARGEN</div>
+            <div style="font-size:1.3rem;font-weight:700;color:var(--wine)">115%</div>
+          </div>
+        </div>
+        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20pedir%201%20docena%20(12%20und)%20para%20empezar%20📦" class="tbl-btn" target="_blank" rel="noopener" style="display:block;text-align:center;width:100%;text-align:center;padding:.65rem;border-radius:8px;display:block;font-size:.9rem">
+          Pedir
+        </a>
+      </div>
+
+      <div class="tier-mobile-card reveal" style="background:rgba(139,90,120,.04);border:2px solid var(--wine);border-radius:16px;padding:1.4rem 1.5rem;position:relative">
+        <div style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--wine);color:#fff;font-size:.72rem;font-weight:700;padding:3px 14px;border-radius:0 0 10px 10px;letter-spacing:.05em">MÁS ELEGIDO</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;padding-top:.8rem">
+          <span style="font-size:.72rem;font-weight:700;background:var(--wine);color:#fff;padding:3px 10px;border-radius:20px;letter-spacing:.04em">⭐ POPULAR</span>
+          <div style="text-align:right">
+            <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--wine);line-height:1">24 und</div>
+            <div style="font-size:.78rem;color:var(--muted)">2 docenas</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">PRECIO/UD</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--wine)">$17.500</div>
+          </div>
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">INVERSIÓN</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--text)">$420.000</div>
+          </div>
+        </div>
+        <div style="background:var(--wine);border-radius:10px;padding:.9rem 1rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+          <div>
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.6);margin-bottom:2px">GANANCIA POTENCIAL</div>
+            <div style="font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:#fff">$588.000</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.6);margin-bottom:2px">MARGEN</div>
+            <div style="font-size:1.3rem;font-weight:700;color:#fff">140%</div>
+          </div>
+        </div>
+        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20pedir%2024%20unidades%20(2%20docenas)%20💰" class="btn-wa" target="_blank" rel="noopener" style="display:block;text-align:center;width:100%;box-sizing:border-box;padding:.75rem">
+          Pedir ahora
+        </a>
+      </div>
+
+      <div class="tier-mobile-card reveal" style="background:var(--bg,#fff);border:1px solid rgba(139,90,120,.15);border-radius:16px;padding:1.4rem 1.5rem;position:relative">
+        
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+          <span style="font-size:.72rem;font-weight:700;background:rgba(139,90,120,.12);color:var(--wine);padding:3px 10px;border-radius:20px;letter-spacing:.04em">DISTRIBUIDOR</span>
+          <div style="text-align:right">
+            <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--wine);line-height:1">48 und</div>
+            <div style="font-size:.78rem;color:var(--muted)">4 docenas</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">PRECIO/UD</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--wine)">$16.500</div>
+          </div>
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">INVERSIÓN</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--text)">$792.000</div>
+          </div>
+        </div>
+        <div style="background:rgba(139,90,120,.08);border-radius:10px;padding:.9rem 1rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+          <div>
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">GANANCIA POTENCIAL</div>
+            <div style="font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--wine)">$1.224.000</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">MARGEN</div>
+            <div style="font-size:1.3rem;font-weight:700;color:var(--wine)">154%</div>
+          </div>
+        </div>
+        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20información%20para%20pedido%20de%2048%20unidades%20🏪" class="tbl-btn" target="_blank" rel="noopener" style="display:block;text-align:center;width:100%;text-align:center;padding:.65rem;border-radius:8px;display:block;font-size:.9rem">
+          Consultar
+        </a>
+      </div>
+
+      <div class="tier-mobile-card reveal" style="background:var(--bg,#fff);border:1px solid rgba(139,90,120,.15);border-radius:16px;padding:1.4rem 1.5rem;position:relative">
+        
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+          <span style="font-size:.72rem;font-weight:700;background:rgba(139,90,120,.08);color:var(--muted);padding:3px 10px;border-radius:20px;letter-spacing:.04em">MAYOREO</span>
+          <div style="text-align:right">
+            <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--wine);line-height:1">+96 und</div>
+            <div style="font-size:.78rem;color:var(--muted)">+8 docenas</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">PRECIO/UD</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--wine)">A convenir</div>
+          </div>
+          <div style="background:rgba(255,255,255,.6);border-radius:10px;padding:.8rem;text-align:center">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:3px">INVERSIÓN</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--text)">—</div>
+          </div>
+        </div>
+        <div style="background:rgba(139,90,120,.08);border-radius:10px;padding:.9rem 1rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+          <div>
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">GANANCIA POTENCIAL</div>
+            <div style="font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--wine)">Negociable</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:2px">MARGEN</div>
+            <div style="font-size:1.3rem;font-weight:700;color:var(--wine)">Máximo</div>
+          </div>
+        </div>
+        <a href="https://wa.me/573117757407?text=Hola!%20Soy%20distribuidor%20mayorista%20y%20quiero%20cotización%20para%20+96%20unidades%20🏭" class="tbl-btn" target="_blank" rel="noopener" style="display:block;text-align:center;width:100%;text-align:center;padding:.65rem;border-radius:8px;display:block;font-size:.9rem">
+          Cotizar
+        </a>
+      </div>
+      <p class="pricing-note" style="margin-top:1rem">* Precios COP sin IVA · Detal calculado a $42.000/ud sugerido</p>
     </div>
 
     <div class="pricing-cta-row reveal">
