@@ -261,13 +261,13 @@ function showExit() {
       <button class="exit-close-btn">✕</button>
       <span class="exit-popup-icon">💰</span>
       <h3>¿Todavía no te decidiste?</h3>
-      <p>Con <strong>solo 12 pijamas</strong> empezás a generar ingresos. La inversión más baja para una docena es <strong>$102.000</strong> — y la ganancia potencial es <strong>$84.000</strong>.</p>
+      <p>Con <strong>solo 6 pijamas</strong> empezás a generar ingresos. La inversión mínima es <strong>$129.000</strong> — y la ganancia potencial es <strong>$123.000</strong>.</p>
       <div class="exit-anchor" style="margin-bottom:20px">
-        <span style="font-size:.85rem;color:var(--muted)">Inversión: $102.000</span>
+        <span style="font-size:.85rem;color:var(--muted)">Inversión: $129.000</span>
         <span>→</span>
-        <strong style="font-family:var(--font-display);font-size:1.4rem;color:var(--wine)">Ganás $84.000</strong>
+        <strong style="font-family:var(--font-display);font-size:1.4rem;color:var(--wine)">Ganás $123.000</strong>
       </div>
-      <a href="https://wa.me/573117757407?text=Hola!%20Vi%20la%20calculadora%20y%20quiero%20empezar%20con%201%20docena%20📦" class="exit-popup-cta" target="_blank" rel="noopener">Empezar con 1 docena</a>
+      <a href="https://wa.me/573117757407?text=Hola!%20Vi%20la%20calculadora%20y%20quiero%20empezar%20con%206%20pijamas%20📦" class="exit-popup-cta" target="_blank" rel="noopener">Empezar con 6 pijamas</a>
       <p class="exit-popup-note">Sin compromiso · Respondemos en &lt;1 hora</p>
     </div>`;
   document.body.appendChild(p);
