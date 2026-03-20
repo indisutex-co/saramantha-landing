@@ -1771,7 +1771,11 @@ a:focus-visible, button:focus-visible {
   .guarantee-item:last-child { border-bottom: none !important; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .footer-legal { display: none; }
+  .footer-legal { display: block; }
+  .footer-legal h4 { margin-bottom: 10px; }
+  .footer-legal a { display: inline; font-size: .75rem; padding: 0; margin-right: 8px; color: rgba(255,255,255,.4); }
+  .footer-legal a::after { content: "·"; margin-left: 8px; color: rgba(255,255,255,.2); }
+  .footer-legal a:last-child::after { display: none; }
   .wa-float { bottom: 16px; right: 16px; }
   .wa-label { display: none; }
   .wa-float { padding: 14px; border-radius: 50%; width: 56px; height: 56px; justify-content: center; }
