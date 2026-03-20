@@ -144,12 +144,15 @@ fbq('track', 'PageView');
   <link rel="stylesheet" href="style.css">
 
 <style>
-@media(max-width:640px){
-  .cmp-ancla{grid-template-columns:1fr!important}
-  .cmp-cols{grid-template-columns:1fr!important}
-  .cmp-hero{grid-template-columns:1fr!important}
+@media(max-width:680px){
+  .cmp-ancla,.cmp-ancla[style]{grid-template-columns:1fr!important;gap:10px!important}
+  .cmp-cols,.cmp-cols[style]{grid-template-columns:1fr!important;gap:12px!important}
+  .cmp-hero,.cmp-hero[style]{grid-template-columns:1fr!important}
   .cmp-hero .hero-icon{display:none!important}
-  .vent-grid{grid-template-columns:1fr 1fr!important}
+  .vent-grid,.vent-grid[style]{grid-template-columns:1fr 1fr!important}
+  .cmp-ancla>div{padding:1.2rem!important}
+  .cmp-ancla>div>div:last-child{font-size:2rem!important}
+  .cmp-hero>div:first-child>div:nth-child(2)>span:first-child{font-size:2.5rem!important}
 }
 </style>
 </head>
@@ -558,14 +561,14 @@ fbq('track', 'PageView');
     <div class="reveal" style="margin-top:3rem">
 
       <!-- HÉROE DE CAPACIDAD — número grande protagonista -->
-      <div style="background:var(--wine);border-radius:24px;padding:2.5rem 2rem;margin-bottom:2rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:1.5rem;overflow:hidden;position:relative" class="cmp-hero">
+      <div style="background:var(--wine);border-radius:24px;padding:clamp(1.5rem,4vw,2.5rem) clamp(1.2rem,4vw,2rem);margin-bottom:2rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:1.5rem;overflow:hidden;position:relative" class="cmp-hero">
         <div style="position:absolute;right:-20px;top:-20px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
         <div style="position:absolute;right:60px;bottom:-40px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.03)"></div>
         <div style="position:relative">
           <div style="font-size:.75rem;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);margin-bottom:.5rem">CAPACIDAD DE PRODUCCIÓN</div>
           <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:.4rem">
-            <span style="font-family:var(--font-display);font-size:clamp(3rem,8vw,4.5rem);font-weight:700;color:#fff;line-height:1">60.000</span>
-            <span style="font-family:var(--font-display);font-size:1.4rem;color:rgba(255,255,255,.7)">und/mes</span>
+            <span style="font-family:var(--font-display);font-size:clamp(2.5rem,8vw,4.5rem);font-weight:700;color:#fff;line-height:1">60.000</span>
+            <span style="font-family:var(--font-display);font-size:clamp(1rem,3vw,1.4rem);color:rgba(255,255,255,.7)">und/mes</span>
           </div>
           <div style="font-size:.95rem;color:rgba(255,255,255,.75);max-width:380px;line-height:1.6">Bodegas y puntos físicos de venta en el centro de Cali. Nunca te quedás sin stock — despachos el mismo día o al siguiente hábil.</div>
         </div>
@@ -638,14 +641,14 @@ fbq('track', 'PageView');
     </div>
 
     <!-- NÚMEROS ANCLA -->
-    <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:3rem" class="cmp-ancla">
+    <div class="reveal cmp-ancla" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:3rem">
       <div style="background:var(--cream);border-radius:16px;padding:1.5rem;text-align:center;border:1.5px solid var(--wine-light,rgba(139,90,120,.2))">
         <div style="font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:.4rem">PRECIO MAYORISTA</div>
         <div style="font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--wine);line-height:1">$19.500</div>
         <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">directo con Saramantha</div>
       </div>
       <div style="background:var(--wine);border-radius:16px;padding:1.5rem;text-align:center;position:relative;overflow:hidden">
-        <div style="font-size:.78rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.6);margin-bottom:.4rem">TU GANANCIA / UNIDAD</div>
+        <div style="font-size:.78rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.6);margin-bottom:.4rem">GANANCIA/UNIDAD</div>
         <div style="font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:#fff;line-height:1">$22.500</div>
         <div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.3rem">vendiendo a $42.000</div>
       </div>
@@ -657,7 +660,7 @@ fbq('track', 'PageView');
     </div>
 
     <!-- COMPARACIÓN VISUAL EN 2 COLUMNAS -->
-    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:2.5rem" class="cmp-cols">
+    <div class="reveal cmp-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:2.5rem">
 
       <!-- COLUMNA SARAMANTHA -->
       <div style="background:var(--wine);border-radius:20px;padding:2rem;color:#fff">
