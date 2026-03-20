@@ -158,6 +158,26 @@ fbq('track', 'PageView');
 }
 .pricing-mobile{display:none}
 .pricing-desktop{display:block}
+.trust-mobile{display:none}
+.trust-desktop{display:flex}
+@media(max-width:680px){
+  .trust-desktop{display:none!important}
+  .trust-mobile{display:block!important;padding:.25rem 0}
+  .trust-mobile-hero{text-align:center;padding:1.2rem 1rem .8rem;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:.75rem}
+  .tmh-num{font-family:var(--font-display,serif);font-size:3rem;font-weight:700;color:#fff;line-height:1;margin-bottom:.2rem}
+  .tmh-label{font-size:.78rem;color:rgba(255,255,255,.65);font-weight:500;letter-spacing:.03em}
+  .trust-mobile-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 .5rem .75rem}
+  .tmg-item{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border-radius:8px;padding:.55rem .75rem;font-size:.8rem;color:rgba(255,255,255,.9);font-weight:500}
+  .tmg-item span:first-child{font-size:1rem;flex-shrink:0}
+  .tmg-full{grid-column:1/-1;justify-content:center}
+}
+
+@media(max-width:680px){
+  .live-ticker{display:none!important}
+  .mayor-section{padding-top:2.5rem!important;padding-bottom:2.5rem!important}
+  .collection-section .collection-header{padding-top:2rem!important}
+  .section-title{font-size:clamp(1.8rem,6vw,2.8rem)!important}
+}
 </style>
 </head>
 
@@ -360,7 +380,8 @@ fbq('track', 'PageView');
 
 <!-- ══ TRUST BAR ══ -->
 <div class="trust-bar">
-  <div class="trust-inner">
+  <!-- DESKTOP: fila horizontal (comportamiento original) -->
+  <div class="trust-inner trust-desktop">
     <div class="trust-item"><span>🏭</span><span>Fabricantes directos</span></div>
     <div class="trust-sep"></div>
     <div class="trust-item"><span>📦</span><span>Mínimo 6 unidades</span></div>
@@ -374,6 +395,20 @@ fbq('track', 'PageView');
     <div class="trust-item"><span>🏭</span><span>60.000 und/mes capacidad</span></div>
     <div class="trust-sep"></div>
     <div class="trust-item"><span>💰</span><span>Hasta 115% de margen</span></div>
+  </div>
+  <!-- MÓVIL: layout visual con jerarquía -->
+  <div class="trust-mobile">
+    <div class="trust-mobile-hero">
+      <div class="tmh-num">115%</div>
+      <div class="tmh-label">Margen bruto para revendedores</div>
+    </div>
+    <div class="trust-mobile-grid">
+      <div class="tmg-item"><span>🏭</span><span>Fabricantes directos</span></div>
+      <div class="tmg-item"><span>📦</span><span>Desde 6 unidades</span></div>
+      <div class="tmg-item"><span>💳</span><span>Contra entrega</span></div>
+      <div class="tmg-item"><span>🚚</span><span>Todo Colombia</span></div>
+      <div class="tmg-item tmg-full"><span>🏭</span><span>60.000 und/mes · Bodegas Cali</span></div>
+    </div>
   </div>
 </div>
 
