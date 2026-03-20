@@ -579,7 +579,7 @@ fbq('track', 'PageView');
 <!-- ══════════════════════════════════════════
      COMPARACIÓN DIRECTO VS INTERMEDIARIO
 ══════════════════════════════════════════ -->
-<section class="mayor-section" style="padding-top:0">
+<section class="mayor-section" style="padding-top:0;padding-bottom:5rem">
   <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">⚖️ Por qué comprarnos directo</span>
@@ -587,58 +587,89 @@ fbq('track', 'PageView');
       <p class="section-sub">Cada eslabón que se agrega entre el fabricante y vos se lleva una parte de tu margen. Nosotros somos el origen.</p>
     </div>
 
-    <div class="reveal" style="overflow-x:auto;margin-bottom:2rem">
-      <table class="pricing-table" role="table" style="min-width:560px">
-        <thead>
-          <tr>
-            <th scope="col" style="width:36%">¿Qué comparás?</th>
-            <th scope="col" style="width:32%;background:rgba(139,90,120,.12);color:var(--wine)">✦ Directo con Saramantha</th>
-            <th scope="col" style="width:32%">A través de intermediario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Precio por unidad</strong></td>
-            <td style="background:rgba(139,90,120,.06);font-weight:600;color:var(--wine)">$19.500</td>
-            <td style="color:var(--muted)">$25.000 – $32.000</td>
-          </tr>
-          <tr>
-            <td><strong>Ganancia por unidad</strong><br/><span style="font-size:.8rem;color:var(--muted)">vendiendo a $42.000</span></td>
-            <td style="background:rgba(139,90,120,.06);font-weight:600;color:var(--wine)">$22.500</td>
-            <td style="color:var(--muted)">$10.000 – $17.000</td>
-          </tr>
-          <tr>
-            <td><strong>Margen bruto</strong></td>
-            <td style="background:rgba(139,90,120,.06);font-weight:600;color:var(--wine)">115%</td>
-            <td style="color:var(--muted)">31% – 68%</td>
-          </tr>
-          <tr>
-            <td><strong>Información del producto</strong></td>
-            <td style="background:rgba(139,90,120,.06)">Hablás con quien lo fabrica</td>
-            <td style="color:var(--muted)">Revendedor que no conoce el origen</td>
-          </tr>
-          <tr>
-            <td><strong>Diseños exclusivos</strong></td>
-            <td style="background:rgba(139,90,120,.06)">Sí — sublimados propios</td>
-            <td style="color:var(--muted)">No — cualquiera puede venderlos</td>
-          </tr>
-          <tr>
-            <td><strong>Precio estable</strong></td>
-            <td style="background:rgba(139,90,120,.06)">Sí — acordamos y respetamos</td>
-            <td style="color:var(--muted)">Variable según el intermediario</td>
-          </tr>
-          <tr>
-            <td><strong>Pago contra entrega</strong></td>
-            <td style="background:rgba(139,90,120,.06)">Disponible en todo Colombia</td>
-            <td style="color:var(--muted)">Depende del intermediario</td>
-          </tr>
-          <tr>
-            <td><strong>Stock garantizado</strong></td>
-            <td style="background:rgba(139,90,120,.06)">60.000 und/mes · Bodegas en Cali</td>
-            <td style="color:var(--muted)">Depende de lo que tenga el revendedor</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- NÚMEROS ANCLA -->
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:3rem">
+      <div style="background:var(--cream);border-radius:16px;padding:1.5rem;text-align:center;border:1.5px solid var(--wine-light,rgba(139,90,120,.2))">
+        <div style="font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:.4rem">PRECIO MAYORISTA</div>
+        <div style="font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--wine);line-height:1">$19.500</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">directo con Saramantha</div>
+      </div>
+      <div style="background:var(--wine);border-radius:16px;padding:1.5rem;text-align:center;position:relative;overflow:hidden">
+        <div style="font-size:.78rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.6);margin-bottom:.4rem">TU GANANCIA / UNIDAD</div>
+        <div style="font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:#fff;line-height:1">$22.500</div>
+        <div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.3rem">vendiendo a $42.000</div>
+      </div>
+      <div style="background:var(--cream);border-radius:16px;padding:1.5rem;text-align:center;border:1.5px solid var(--wine-light,rgba(139,90,120,.2))">
+        <div style="font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:.4rem">MARGEN BRUTO</div>
+        <div style="font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--wine);line-height:1">115%</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">más del doble del mercado</div>
+      </div>
+    </div>
+
+    <!-- COMPARACIÓN VISUAL EN 2 COLUMNAS -->
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:2.5rem">
+
+      <!-- COLUMNA SARAMANTHA -->
+      <div style="background:var(--wine);border-radius:20px;padding:2rem;color:#fff">
+        <div style="font-size:.75rem;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);margin-bottom:1.2rem">✦ DIRECTO CON SARAMANTHA</div>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:#fff">Diseños exclusivos sublimados</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:2px">No los encontrás en ningún otro proveedor</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:#fff">Pago contra entrega en todo Colombia</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:2px">Recibís primero, pagás cuando llega</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:#fff">60.000 und/mes — stock garantizado</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:2px">Bodegas propias en el centro de Cali</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:#fff">Precio fijo y acordado</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:2px">Sin sorpresas. Lo que acordamos es lo que pagás</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:#fff">Hablás con quien fabrica</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:2px">Atención directa, sin intermediarios</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:#fff">Programa de distribuidores exclusivos</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:2px">Precio especial para revendedores frecuentes</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMNA INTERMEDIARIO -->
+      <div style="background:var(--cream);border-radius:20px;padding:2rem;border:1.5px solid rgba(139,90,120,.15)">
+        <div style="font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--muted);margin-bottom:1.2rem">A TRAVÉS DE INTERMEDIARIO</div>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px;opacity:.4"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:var(--text)">Diseños genéricos o importados</div><div style="font-size:.8rem;color:var(--muted);margin-top:2px">Los mismos que vende todo el mundo</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px;opacity:.4"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:var(--text)">Pago anticipado obligatorio</div><div style="font-size:.8rem;color:var(--muted);margin-top:2px">Ponés el dinero antes de ver el producto</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px;opacity:.4"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:var(--text)">Stock incierto</div><div style="font-size:.8rem;color:var(--muted);margin-top:2px">Depende de lo que tenga el revendedor</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px;opacity:.4"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:var(--text)">Precio variable</div><div style="font-size:.8rem;color:var(--muted);margin-top:2px">Puede subir sin aviso según el intermediario</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px;opacity:.4"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:var(--text)">Nadie conoce el producto de fondo</div><div style="font-size:.8rem;color:var(--muted);margin-top:2px">Revendedor que tampoco habla con el origen</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" style="flex-shrink:0;margin-top:1px;opacity:.4"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+            <div><div style="font-size:.95rem;font-weight:600;color:var(--text)">Margen recortado: 31%–68%</div><div style="font-size:.8rem;color:var(--muted);margin-top:2px">Cada intermediario se lleva su parte</div></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="pricing-cta-row reveal">
