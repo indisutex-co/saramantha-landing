@@ -131,7 +131,7 @@ function calcUpdate() {
   // Actualizar enlace WA con los datos calculados
   const waBtn = document.getElementById('calc-wa-btn');
   if (waBtn) {
-    waBtn.href = `https://wa.me/573117757407?text=Hola!%20Calculé%20mi%20pedido%3A%20${units}%20unidades%20a%20${fmt(unitCost)}%20c/u%20=%20${fmt(invest)}%20de%20inversión.%20Quiero%20coordinar%20el%20pedido%20📦`;
+    waBtn.href = `https://wa.me/573117757407?text=Hola%20Saramantha%20%F0%9F%8C%B8%20Calculé%20mi%20pedido%3A%20${units}%20unidades%20a%20${fmt(unitCost)}%20c/u%20%3D%20${fmt(invest)}%20de%20inversión%20📦`;
   }
 }
 
@@ -181,9 +181,9 @@ function openLb(idx) {
   lbImg.alt = imgEl.alt;
   const lbMayor = document.getElementById('lb-price-mayor');
   const lbDetal = document.getElementById('lb-price-detal');
-  if (lbMayor) lbMayor.textContent = (mayorPrices[idx]||'$8.500') + '/ud (x12+)';
-  if (lbDetal) lbDetal.textContent = detalPrices[idx]||'$15.500';
-  if (lbWa) lbWa.href = `https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20diseño%20${idx+1}%20📦%20¿Tienen%20disponibilidad%20y%20en%20qué%20tallas?`;
+  if (lbMayor) lbMayor.textContent = (mayorPrices[idx]||'$19.500') + '/ud (x12+)';
+  if (lbDetal) lbDetal.textContent = detalPrices[idx]||'$42.000';
+  if (lbWa) lbWa.href = `https://wa.me/573117757407?text=Hola%20Saramantha%20%F0%9F%8C%B8%20Me%20interesa%20el%20diseño%20${idx+1}%20📦`;
   lightbox?.classList.add('active');
   document.body.style.overflow = 'hidden';
   trackEvent('lightbox_open',{event_label:`design_${idx+1}`});
