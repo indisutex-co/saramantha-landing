@@ -2042,7 +2042,7 @@ a:focus-visible, button:focus-visible {
 }
 .detal-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
 .detal-card-combo { background: var(--wine); border-color: var(--wine); }
-.detal-card-combo h3, .detal-card-combo p { color: #fff; font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.detal-card-combo h3, .detal-card-combo p { color: #fff !important; font-weight: 600 !important; text-shadow: 0 1px 4px rgba(0,0,0,.5) !important; }
 .detal-icon { font-size: 2.2rem; display: block; }
 .detal-card h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; color: var(--wine); }
 .detal-card p { font-size: .92rem; color: var(--muted); line-height: 1.7; flex: 1; }
