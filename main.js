@@ -96,7 +96,7 @@ btnDetal?.addEventListener('click',()=>setAudience('detal'));
 /* ════════════════════════════════
    CALCULADORA DE RENTABILIDAD
 ════════════════════════════════ */
-const unitPrices = { 12:8500, 24:8000, 36:8000, 48:7500, 60:7500, 72:7500, 84:7000, 96:7000, 108:7000, 120:6500, 132:6500, 144:6500 };
+const unitPrices = { 6:21500, 12:19500, 18:19500, 24:17500, 30:17500, 36:17500, 42:17500, 48:16500, 54:16500, 60:16500, 66:16500, 72:16500, 78:16500, 84:16000, 90:16000, 96:16000, 102:16000, 108:16000, 114:16000, 120:16000, 126:16000, 132:16000, 138:16000, 144:16000 };
 
 function fmt(n) {
   return '$' + Math.round(n).toLocaleString('es-CO');
@@ -104,8 +104,8 @@ function fmt(n) {
 
 function calcUpdate() {
   const units   = parseInt(document.getElementById('c-units')?.value || 24);
-  const sell    = parseInt(document.getElementById('c-price-sell')?.value || 15500);
-  const unitCost = unitPrices[units] || 7500;
+  const sell    = parseInt(document.getElementById('c-price-sell')?.value || 42000);
+  const unitCost = unitPrices[units] || 16000;
   const invest   = units * unitCost;
   const revenue  = units * sell;
   const profit   = revenue - invest;
