@@ -1762,8 +1762,9 @@ a:focus-visible, button:focus-visible {
   .trust-item { padding: 5px 10px; font-size: .79rem; }
   .offer-anchor-grid { grid-template-columns: 1fr; }
   .offer-card-2x1 { order: 2; }
-  .collection-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; gap: 4px; }
-  .col-item--wide { grid-column: span 2; }
+  .collection-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; gap: 4px; }
+  .col-item--wide { grid-column: span 1; }
+  .col-item--tall { grid-row: span 1; }
   .col-overlay { opacity: 1; }
   .benefits-grid { grid-template-columns: 1fr; }
   .guarantees-grid { grid-template-columns: 1fr; padding: 0 16px; }
@@ -2041,7 +2042,7 @@ a:focus-visible, button:focus-visible {
 }
 .detal-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
 .detal-card-combo { background: var(--wine); border-color: var(--wine); }
-.detal-card-combo h3, .detal-card-combo p { color: rgba(255,255,255,.9); }
+.detal-card-combo h3, .detal-card-combo p { color: #fff; font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,.3); }
 .detal-icon { font-size: 2.2rem; display: block; }
 .detal-card h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; color: var(--wine); }
 .detal-card p { font-size: .92rem; color: var(--muted); line-height: 1.7; flex: 1; }
