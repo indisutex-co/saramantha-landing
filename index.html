@@ -379,12 +379,27 @@
   .products-grid { grid-template-columns: 1fr; gap: 20px; }
   .pc-info { padding: 16px 16px 18px; }
 }
+
+/* ── HINT PRECIO POR WA ── */
+.pc-price-cta-hint {
+  font-family: var(--font-body);
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--wine);
+  background: rgba(105,31,77,.07);
+  border: 1px solid rgba(105,31,77,.15);
+  border-radius: var(--r-full);
+  padding: 5px 12px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: .02em;
+}
   </style>
 </head>
 <body>
 
 <!-- ══ WHATSAPP FLOTANTE ══ -->
-<a href="https://wa.me/573117757407?text=Hola%20Saramantha%20%F0%9F%8C%B8" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+<a href="https://wa.me/c/573235753226" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span class="wa-label">Precio mayorista</span>
   <span class="wa-pulse"></span>
@@ -394,13 +409,13 @@
 <div class="urgency-bar" aria-live="off">
   <div class="urgency-track">
     <span>📦 Pedido mínimo: <strong>6 unidades</strong> &nbsp;·&nbsp;</span>
-    <span>💰 Mayorista desde <strong>$19.500/ud</strong> &nbsp;·&nbsp;</span>
+    <span>💰 Precios mayoristas por WhatsApp &nbsp;·&nbsp;</span>
     <span>🇨🇴 Fabricación colombiana · Indisutex SAS &nbsp;·&nbsp;</span>
     <span>🚚 Pago contra entrega en todo Colombia &nbsp;·&nbsp;</span>
     <span>📲 Catálogo mayorista por WhatsApp &nbsp;·&nbsp;</span>
     <span>🔥 Margen de reventa hasta <strong>90%</strong> &nbsp;·&nbsp;</span>
     <span>📦 Pedido mínimo: <strong>6 unidades</strong> &nbsp;·&nbsp;</span>
-    <span>💰 Mayorista desde <strong>$19.500/ud</strong> &nbsp;·&nbsp;</span>
+    <span>💰 Precios mayoristas por WhatsApp &nbsp;·&nbsp;</span>
     <span>🇨🇴 Fabricación colombiana · Indisutex SAS &nbsp;·&nbsp;</span>
     <span>🚚 Pago contra entrega en todo Colombia &nbsp;·&nbsp;</span>
     <span>📲 Catálogo mayorista por WhatsApp &nbsp;·&nbsp;</span>
@@ -426,7 +441,7 @@
       <a href="#detal">Detal</a>
     </nav>
     <div class="nav-actions">
-      <a href="https://wa.me/573117757407?text=Hola!%20Soy%20revendedor%20y%20quiero%20el%20listado%20de%20precios%20mayoristas%20%F0%9F%93%8B" class="nav-cta-mayor" target="_blank" rel="noopener">Lista mayorista</a>
+      <a href="https://wa.me/c/573235753226" class="nav-cta-mayor" target="_blank" rel="noopener">Lista mayorista</a>
       <a href="https://wa.me/c/573235753226" class="nav-cta" target="_blank" rel="noopener">Ver catálogo</a>
     </div>
     <button class="nav-hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
@@ -439,7 +454,7 @@
     <a href="#coleccion" class="nav-m-link">Colección</a>
     <a href="#calculadora" class="nav-m-link">Calculadora de ganancia</a>
     <a href="#detal" class="nav-m-link">Venta al detal</a>
-    <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20precios%20mayoristas%20%F0%9F%93%8B" class="nav-m-cta" target="_blank" rel="noopener">Pedir lista de precios</a>
+    <a href="https://wa.me/c/573235753226" class="nav-m-cta" target="_blank" rel="noopener">Pedir lista de precios</a>
   </div>
 </header>
 
@@ -482,7 +497,7 @@
         <div class="hn-item"><span class="hn-num">115%</span><span class="hn-label">Margen bruto promedio</span></div>
       </div>
       <div class="hero-ctas">
-        <a href="https://wa.me/573117757407?text=Hola!%20Soy%20revendedor%20y%20quiero%20el%20listado%20de%20precios%20mayoristas%20y%20el%20catálogo%20%F0%9F%93%8B" class="btn-wa btn-wa--mayor" target="_blank" rel="noopener">
+        <a href="https://wa.me/c/573235753226" class="btn-wa btn-wa--mayor" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Pedir lista de precios mayoristas
         </a>
@@ -494,7 +509,7 @@
         <div class="hero-media-slot">
           <img src="100Carrusel.jpg" alt="Pijamas por mayor Colombia - Saramantha Indisutex" class="hero-main-img" width="540" height="680" loading="eager" fetchpriority="high"/>
         </div>
-        <div class="price-float-card price-float-mayor">
+        <div class="price-float-card price-float-mayor" style="display:none">
           <div class="pfc-label">Precio mayorista x6</div>
           <div class="pfc-price">$19.500 <span>c/u</span></div>
           <div class="pfc-sub">$117.000 media docena</div>
@@ -525,7 +540,7 @@
       <p class="hero-sub">Telas suaves, diseños exclusivos y calidad colombiana real. Más de 500 mujeres ya duermen mejor.</p>
       <div class="hero-stars"><span class="stars-ico">★★★★★</span><span class="stars-text">+500 clientas felices</span></div>
       <div class="hero-ctas">
-        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20una%20pijama%20al%20detal%20%F0%9F%8C%B8%20¿Qué%20diseños%20tienen?" class="btn-wa" target="_blank" rel="noopener">
+        <a href="https://wa.me/c/573235753226" class="btn-wa" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Quiero mi pijama ahora
         </a>
@@ -540,7 +555,7 @@
         <div class="hero-media-slot">
           <img src="500Carrusel.jpg" alt="Pijama Saramantha mujer Colombia" class="hero-main-img" width="540" height="680" loading="lazy"/>
         </div>
-        <div class="price-float-card">
+        <div class="price-float-card" style="display:none">
           <div class="pfc-label">Precio especial hoy</div>
           <div class="pfc-anchor"><s>$55.000</s></div>
           <div class="pfc-price">$35.000 <span>COP</span></div>
@@ -609,15 +624,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Diseño Clásico</div>
-        <div class="pc-price-row">
-          <span class="pc-price-mayor">$19.500</span>
-          <span class="pc-price-label">/ und · mayorista</span>
-        </div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%201%20(foto%2010-13)%20para%20pedido%20mayorista%20%F0%9F%93%A6%20¿Tienen%20disponibilidad?" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -645,12 +655,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Sublimado Floral</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%202%20(foto%2020-23)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -678,12 +686,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Estampado Premium</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%203%20(foto%2030-33)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -711,12 +717,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Colores Vibrantes</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%204%20(foto%2040-43)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -744,12 +748,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Serigrafía Exclusiva</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%205%20(foto%2050-53)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -777,12 +779,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Diseño Moderno</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%206%20(foto%2060-63)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -810,12 +810,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Tela Sedosa</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%207%20(foto%2070-73)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -843,12 +841,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Diseño Fantasía</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%208%20(foto%2080-83)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -876,12 +872,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Clásica Elegante</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%209%20(foto%2090-93)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -909,12 +903,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Sublimado Tropical</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%2010%20(foto%20100-103)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -942,12 +934,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Diseño Exclusivo 2025</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%2011%20(foto%20200-203)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -981,12 +971,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Colección Premium</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%2012%20(foto%20300-306)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -1014,12 +1002,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Diseño Contemporáneo</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%2013%20(foto%20400-403)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -1047,12 +1033,10 @@
       </div>
       <div class="pc-info">
         <div class="pc-name">Pijama Edición Especial</div>
-        <div class="pc-price-row"><span class="pc-price-mayor">$19.500</span><span class="pc-price-label">/ und · mayorista</span></div>
-        <div class="pc-price-detal">Detal sugerido: $42.000 · <s>$55.000</s></div>
-        <div class="pc-roi">📈 +115% de margen · $22.500 ganancia/und</div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Me%20interesa%20el%20Diseño%2014%20(foto%20500-503)%20para%20pedido%20mayorista%20%F0%9F%93%A6" class="pc-cta" target="_blank" rel="noopener">
+        <div class="pc-price-cta-hint">💬 Precio mayorista por WhatsApp</div>
+        <a href="https://wa.me/c/573235753226" class="pc-cta" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Consultar stock
+          📦 Ver precio mayorista
         </a>
       </div>
     </div>
@@ -1125,7 +1109,7 @@
           <li><span class="fl-icon">✦</span><div><strong>60.000 und/mes de capacidad</strong> — Producción desde nuestras bodegas en el centro de Cali.</div></li>
           <li><span class="fl-icon">✦</span><div><strong>Atención directa</strong> — Hablas con nosotros, no con un vendedor que no conoce el producto.</div></li>
         </ul>
-        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20hablar%20con%20el%20fabricante%20directo%20sobre%20precios%20mayoristas%20%F0%9F%93%8B" class="btn-wa" target="_blank" rel="noopener">
+        <a href="https://wa.me/c/573235753226" class="btn-wa" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Hablar con el fabricante
         </a>
@@ -1170,7 +1154,7 @@
             <td>$252.000</td>
             <td class="gain-cell">$123.000</td>
             <td><span class="margin-badge">95%</span></td>
-            <td><a href="https://wa.me/573117757407?text=Hola!%20Quiero%20pedir%206%20pijamas%20para%20empezar%20%F0%9F%93%A6" class="tbl-btn" target="_blank" rel="noopener">Pedir</a></td>
+            <td><a href="https://wa.me/c/573235753226" class="tbl-btn" target="_blank" rel="noopener">Pedir</a></td>
           </tr>
           <tr class="tier-row tier-highlight">
             <td><span class="tier-badge tier-2">Popular ⭐</span></td>
@@ -1180,7 +1164,7 @@
             <td>$504.000</td>
             <td class="gain-cell gain-big">$270.000</td>
             <td><span class="margin-badge margin-hot">115%</span></td>
-            <td><a href="https://wa.me/573117757407?text=Hola!%20Quiero%20pedir%2012%20unidades%20(1%20docena)%20%F0%9F%92%B0" class="tbl-btn tbl-btn-hot" target="_blank" rel="noopener">Pedir</a></td>
+            <td><a href="https://wa.me/c/573235753226" class="tbl-btn tbl-btn-hot" target="_blank" rel="noopener">💰 Precio mayorista</a></td>
           </tr>
           <tr class="tier-row">
             <td><span class="tier-badge tier-3">Distribuidor</span></td>
@@ -1190,7 +1174,7 @@
             <td>$1.008.000</td>
             <td class="gain-cell gain-big">$576.000</td>
             <td><span class="margin-badge margin-hot">133%</span></td>
-            <td><a href="https://wa.me/573117757407?text=Hola!%20Quiero%20información%20para%2024%20unidades%20%F0%9F%8F%AA" class="tbl-btn" target="_blank" rel="noopener">Consultar</a></td>
+            <td><a href="https://wa.me/c/573235753226" class="tbl-btn" target="_blank" rel="noopener">Consultar y cotizar</a></td>
           </tr>
           <tr class="tier-row">
             <td><span class="tier-badge tier-4">Mayoreo</span></td>
@@ -1200,14 +1184,14 @@
             <td>—</td>
             <td class="gain-cell">Negociable</td>
             <td><span class="margin-badge">Máximo</span></td>
-            <td><a href="https://wa.me/573117757407?text=Hola!%20Soy%20distribuidor%20y%20quiero%20cotización%20para%20+48%20unidades%20%F0%9F%8F%AD" class="tbl-btn" target="_blank" rel="noopener">Cotizar</a></td>
+            <td><a href="https://wa.me/c/573235753226" class="tbl-btn" target="_blank" rel="noopener">Cotizar volumen</a></td>
           </tr>
         </tbody>
       </table>
       <p class="pricing-note">* Precios COP · Ventas al detal calculadas con precio sugerido $42.000 · Sujeto a disponibilidad · <strong>Pago contra entrega disponible</strong></p>
     </div>
     <div class="pricing-cta-row reveal">
-      <a href="https://wa.me/573117757407?text=Hola!%20Vi%20la%20tabla%20de%20precios%20y%20quiero%20el%20listado%20completo%20mayorista%20%F0%9F%93%8B" class="btn-wa-lg" target="_blank" rel="noopener">
+      <a href="https://wa.me/c/573235753226" class="btn-wa-lg" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Recibir lista de precios completa
       </a>
@@ -1268,7 +1252,7 @@
         Con <strong id="ci-units">12 unidades</strong>, invertís <strong id="ci-invest">$234.000</strong> y vendiendo a <strong id="ci-sell">$42.000</strong> ganás <strong id="ci-profit">$270.000</strong> — recuperás la inversión con las primeras <strong id="ci-break">6</strong> unidades vendidas.
       </div>
       <div class="calc-cta-wrap">
-        <a href="https://wa.me/573117757407?text=Hola!%20Calculé%20mi%20pedido%20y%20quiero%20hacer%20un%20pedido%20mayorista%20%F0%9F%A7%AE%20¿Podemos%20coordinar?" class="btn-wa-lg" target="_blank" rel="noopener" id="calc-wa-btn">
+        <a href="https://wa.me/c/573235753226" class="btn-wa-lg" target="_blank" rel="noopener" id="calc-wa-btn">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Hacer mi pedido mayorista
         </a>
@@ -1319,21 +1303,21 @@
         <h3>Para uso personal</h3>
         <p>Elegí el diseño que más te guste del catálogo y pedilo directamente por WhatsApp.</p>
         <div class="detal-price-anchor"><s>$55.000</s><strong>Desde $35.000</strong></div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20una%20pijama%20al%20detal%20%F0%9F%8C%B8%20¿Qué%20diseños%20tienen?" class="btn-wa" target="_blank" rel="noopener">Pedir mi pijama</a>
+        <a href="https://wa.me/c/573235753226" class="btn-wa" target="_blank" rel="noopener">Pedir mi pijama</a>
       </div>
       <div class="detal-card reveal">
         <div class="detal-icon">🎁</div>
         <h3>Para regalar</h3>
         <p>El regalo que siempre acierta. Te ayudamos a elegir el diseño ideal. Envío a quien quieras.</p>
         <div class="detal-price-anchor"><s>$55.000</s><strong>Desde $35.000</strong></div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20una%20pijama%20de%20regalo%20%F0%9F%8E%81%20¿Qué%20diseños%20recomiendan?" class="btn-wa" target="_blank" rel="noopener">Pedir como regalo</a>
+        <a href="https://wa.me/c/573235753226" class="btn-wa" target="_blank" rel="noopener">Pedir como regalo</a>
       </div>
       <div class="detal-card detal-card-combo reveal">
         <div class="detal-icon">💑</div>
         <h3>Combo 2 pijamas</h3>
         <p style="color:#fff;opacity:1;font-weight:500;text-shadow:0 1px 3px rgba(0,0,0,.4)">Pedí 2 diseños diferentes y obtené precio especial. Ideal para regalo doble o para la familia.</p>
         <div class="detal-price-anchor"><s>$80.000</s><strong>$72.000 las 2</strong></div>
-        <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20el%20combo%20de%202%20pijamas%20%F0%9F%8C%B8" class="btn-wa" target="_blank" rel="noopener">Pedir combo</a>
+        <a href="https://wa.me/c/573235753226" class="btn-wa" target="_blank" rel="noopener">Pedir combo</a>
       </div>
     </div>
   </div>
@@ -1386,7 +1370,7 @@
         <div class="fkpi-sep">→</div>
         <div class="fkpi fkpi-win"><span class="fkpi-n">$252.000</span><span class="fkpi-l">Al vender todo</span></div>
       </div>
-      <a href="https://wa.me/573117757407?text=Hola!%20Quiero%20hacer%20mi%20primer%20pedido%20mayorista%20%F0%9F%93%A6%20¿Cómo%20lo%20coordinamos?" class="btn-wa-xl" target="_blank" rel="noopener">
+      <a href="https://wa.me/c/573235753226" class="btn-wa-xl" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Hacer mi pedido mayorista ahora
       </a>
@@ -1428,7 +1412,7 @@
       <div class="footer-contact">
         <h4>Contacto</h4>
         <p>¿Sos mayorista o tenés preguntas?</p>
-        <a href="https://wa.me/573117757407?text=Hola%20Saramantha!" class="footer-wa-btn" target="_blank" rel="noopener">
+        <a href="https://wa.me/c/573235753226" class="footer-wa-btn" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Escribir por WhatsApp
         </a>
