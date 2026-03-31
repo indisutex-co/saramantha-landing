@@ -467,32 +467,57 @@ fbq('track', 'PageView');
     .hero-overlay-badge .text strong { font-size: 16px; font-weight: 900; color: var(--negro); display: block; }
     .hero-overlay-badge .text small { font-size: 11px; color: var(--texto-soft); }
 
-    /* ===== STICKY MOBILE BAR ===== */
+    /* ===== STICKY MOBILE BAR - DOBLE CTA ===== */
     .sticky-mobile-bar {
       display: none;
       position: fixed;
       bottom: 0; left: 0; right: 0;
       z-index: 200;
-      background: var(--verde-wa);
-      padding: 0;
+      background: var(--negro);
+      padding: 10px 12px 10px;
+      gap: 8px;
+      flex-direction: row;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
     }
     .sticky-mobile-bar a {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 7px;
       color: white;
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 900;
-      padding: 16px 20px;
-      width: 100%;
+      padding: 13px 10px;
+      border-radius: 100px;
+      flex: 1;
     }
-    .sticky-mobile-bar svg { width: 22px; height: 22px; fill: white; }
+    .sticky-mobile-bar a.mayorista {
+      background: var(--verde-wa);
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+    }
+    .sticky-mobile-bar a.detal {
+      background: var(--rosa);
+      box-shadow: 0 4px 16px rgba(212,70,122,0.35);
+    }
+    .sticky-mobile-bar svg { width: 18px; height: 18px; fill: white; flex-shrink: 0; }
 
     @media (max-width: 768px) {
-      .sticky-mobile-bar { display: block; }
-      body { padding-bottom: 60px; }
+      .sticky-mobile-bar { display: flex; }
+      body { padding-bottom: 72px; }
     }
+
+    /* ===== MOBILE HERO URGENCY BANNER ===== */
+    .mobile-urgency-bar {
+      display: none;
+      background: linear-gradient(90deg, var(--rosa-dark), var(--rosa));
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .mobile-urgency-bar a { color: white; text-decoration: underline; font-weight: 900; }
+    @media (max-width: 768px) { .mobile-urgency-bar { display: block; } }
 
     /* ===== WAP FLOAT BUTTON ===== */
     .wa-float {
@@ -530,7 +555,115 @@ fbq('track', 'PageView');
       .wa-float { bottom: 28px; right: 28px; width: 68px; height: 68px; }
     }
 
-    /* ===== SECTION BASE ===== */
+    /* ===== CLICKABLE IMAGE OVERLAY ===== */
+    .card-gallery {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .card-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 14px;
+      transition: background 0.25s;
+    }
+    .card-gallery:hover .card-img-overlay { background: rgba(0,0,0,0.38); }
+    .card-img-overlay-btn {
+      background: var(--verde-wa);
+      color: white;
+      font-size: 12px;
+      font-weight: 900;
+      padding: 8px 18px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.25s, transform 0.25s;
+      white-space: nowrap;
+    }
+    .card-gallery:hover .card-img-overlay-btn { opacity: 1; transform: translateY(0); }
+    .card-img-overlay-btn svg { width: 13px; height: 13px; fill: white; }
+
+    /* Mobile: always show overlay hint */
+    @media (max-width: 768px) {
+      .card-img-overlay { background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 60%); }
+      .card-img-overlay-btn { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== CLICKABLE PRICE TAGS ===== */
+    .price-tag-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 900;
+      font-size: 17px;
+      color: var(--rosa);
+      cursor: pointer;
+      border-bottom: 2px dashed rgba(212,70,122,0.3);
+      transition: border-color 0.15s;
+      text-decoration: none;
+    }
+    .price-tag-link:hover { border-color: var(--rosa); }
+    .price-tag-link .price-tap-hint {
+      font-size: 9px;
+      background: var(--verde-wa);
+      color: white;
+      padding: 1px 5px;
+      border-radius: 6px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    /* ===== MOBILE ABOVE-FOLD MINI SOCIAL PROOF ===== */
+    .mobile-proof-strip {
+      display: none;
+      background: var(--gris-suave);
+      border-bottom: 1px solid var(--gris-borde);
+      padding: 10px 16px;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .mobile-proof-strip::-webkit-scrollbar { display: none; }
+    .mobile-proof-strip-inner {
+      display: flex;
+      gap: 16px;
+      width: max-content;
+    }
+    .mob-proof-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--texto-soft);
+      white-space: nowrap;
+    }
+    .mob-proof-item .val { font-weight: 900; color: var(--rosa); }
+    @media (max-width: 768px) { .mobile-proof-strip { display: block; } }
+
+    /* ===== HERO MOBILE DUAL CTA ===== */
+    .hero-cta-secondary-mobile {
+      display: none;
+      width: 100%;
+      background: rgba(212,70,122,0.08);
+      border: 2px solid var(--rosa);
+      color: var(--rosa);
+      font-size: 14px;
+      font-weight: 800;
+      padding: 12px 20px;
+      border-radius: 100px;
+      text-align: center;
+      transition: background 0.15s;
+    }
+    .hero-cta-secondary-mobile:hover { background: rgba(212,70,122,0.14); }
+    @media (max-width: 768px) { .hero-cta-secondary-mobile { display: flex; align-items: center; justify-content: center; gap: 7px; } }
     section { padding: 72px 20px; }
     .section-label {
       display: inline-block;
@@ -1064,17 +1197,25 @@ fbq('track', 'PageView');
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; min-height: auto; }
-      .hero-content { padding: 40px 24px 32px; order: 1; }
+      .hero-content { padding: 28px 20px 24px; order: 1; }
       .hero-visual { order: 2; }
-      .hero-visual-grid { min-height: 320px; }
+      .hero-visual-grid { min-height: 260px; }
+      .hero-title { font-size: clamp(26px, 7vw, 40px); margin-bottom: 12px; }
+      .hero-subtitle { font-size: 14px; margin-bottom: 16px; }
+      .hero-stats { gap: 8px; margin-bottom: 20px; }
+      .stat-chip { min-width: 90px; padding: 9px 12px; }
+      .stat-chip .val { font-size: 18px; }
+      .hero-ctas { gap: 10px; }
+      .btn-wa-primary { font-size: 16px; padding: 15px 24px; }
       .why-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
     }
     @media (max-width: 600px) {
-      section { padding: 48px 16px; }
+      section { padding: 40px 16px; }
       .navbar { top: 34px; padding: 10px 16px; }
       .navbar-brand-text strong { font-size: 15px; }
-      .hero-stats { gap: 12px; }
+      .hero-stats { gap: 8px; }
+      .hero-badge { font-size: 11px; margin-bottom: 12px; }
       .calc-result { grid-template-columns: 1fr 1fr; }
       .catalogo-cta-inner { flex-direction: column; }
       .catalogo-cta-actions { min-width: unset; width: 100%; }
@@ -1101,6 +1242,23 @@ fbq('track', 'PageView');
     <span class="accent">🚚 Pago contra entrega en todo Colombia</span>
     <span>📲 Catálogo mayorista por WhatsApp</span>
     <span class="accent">🔥 Margen de reventa hasta <strong>115%</strong></span>
+  </div>
+</div>
+
+<!-- ===== MOBILE URGENCY BAR ===== -->
+<div class="mobile-urgency-bar" role="banner">
+  🔥 <strong>+500 revendedores activos</strong> · Pago contra entrega · <a href="https://wa.me/c/573235753226" onclick="fbq&&fbq('track','ViewContent')">Ver catálogo →</a>
+</div>
+
+<!-- ===== MOBILE ABOVE-FOLD PROOF STRIP ===== -->
+<div class="mobile-proof-strip" aria-label="Datos clave">
+  <div class="mobile-proof-strip-inner">
+    <div class="mob-proof-item">💰 Desde <span class="val">$19.500</span>/und</div>
+    <div class="mob-proof-item">📦 Mín. <span class="val">6</span> und</div>
+    <div class="mob-proof-item">📈 Margen <span class="val">115%</span></div>
+    <div class="mob-proof-item">🚚 Pago contra entrega</div>
+    <div class="mob-proof-item">⚡ Despacho <span class="val">24h</span></div>
+    <div class="mob-proof-item">🇨🇴 Fab. colombiana</div>
   </div>
 </div>
 
@@ -1152,6 +1310,9 @@ fbq('track', 'PageView');
         <a href="https://wa.me/c/573235753226" class="btn-wa-primary" onclick="fbq&&fbq('track','Lead')">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           👉 Ver catálogo mayorista — WhatsApp
+        </a>
+        <a href="https://wa.me/573117757407?text=Hola%2C+quiero+ver+el+cat%C3%A1logo+de+detal" class="hero-cta-secondary-mobile" onclick="fbq&&fbq('track','ViewContent')">
+          🛍️ Ver catálogo detal — WhatsApp
         </a>
         <a href="#coleccion" class="btn-secondary">Ver colección ↓</a>
       </div>
@@ -1229,6 +1390,10 @@ fbq('track', 'PageView');
         <div class="card-gallery">
           <img src="10Carrusel.jpg" alt="Pijama Diseño Clásico Saramantha" loading="lazy">
           <span class="card-badge">⭐ Top ventas</span>
+
+          <a href="https://wa.me/c/573235753226" class="card-img-overlay" onclick="fbq&&fbq('track','AddToCart')" aria-label="Ver precio por WhatsApp">
+            <span class="card-img-overlay-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ver precio</span>
+          </a>
         </div>
         <div class="card-body">
           <div class="card-name">Pijama Diseño Clásico</div>
@@ -1244,6 +1409,10 @@ fbq('track', 'PageView');
         <div class="card-gallery">
           <img src="20Carrusel.jpg" alt="Pijama Sublimado Floral Saramantha" loading="lazy">
           <span class="card-badge">✨ Nueva llegada</span>
+
+          <a href="https://wa.me/c/573235753226" class="card-img-overlay" onclick="fbq&&fbq('track','AddToCart')" aria-label="Ver precio por WhatsApp">
+            <span class="card-img-overlay-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ver precio</span>
+          </a>
         </div>
         <div class="card-body">
           <div class="card-name">Pijama Sublimado Floral</div>
@@ -1259,6 +1428,10 @@ fbq('track', 'PageView');
         <div class="card-gallery">
           <img src="30Carrusel.jpg" alt="Pijama Estampado Premium Saramantha" loading="lazy">
           <span class="card-badge">🔥 Alta rotación</span>
+
+          <a href="https://wa.me/c/573235753226" class="card-img-overlay" onclick="fbq&&fbq('track','AddToCart')" aria-label="Ver precio por WhatsApp">
+            <span class="card-img-overlay-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ver precio</span>
+          </a>
         </div>
         <div class="card-body">
           <div class="card-name">Pijama Estampado Premium</div>
@@ -1274,6 +1447,10 @@ fbq('track', 'PageView');
         <div class="card-gallery">
           <img src="300Carrusel.jpg" alt="Pijama Colección Premium Saramantha" loading="lazy">
           <span class="card-badge">⭐ Colección especial</span>
+
+          <a href="https://wa.me/c/573235753226" class="card-img-overlay" onclick="fbq&&fbq('track','AddToCart')" aria-label="Ver precio por WhatsApp">
+            <span class="card-img-overlay-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ver precio</span>
+          </a>
         </div>
         <div class="card-body">
           <div class="card-name">Pijama Colección Premium</div>
@@ -1289,6 +1466,10 @@ fbq('track', 'PageView');
         <div class="card-gallery">
           <img src="400Carrusel.jpg" alt="Pijama Contemporáneo Saramantha" loading="lazy">
           <span class="card-badge">🔥 Tendencia</span>
+
+          <a href="https://wa.me/c/573235753226" class="card-img-overlay" onclick="fbq&&fbq('track','AddToCart')" aria-label="Ver precio por WhatsApp">
+            <span class="card-img-overlay-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ver precio</span>
+          </a>
         </div>
         <div class="card-body">
           <div class="card-name">Pijama Diseño Contemporáneo</div>
@@ -1304,6 +1485,10 @@ fbq('track', 'PageView');
         <div class="card-gallery">
           <img src="500Carrusel.jpg" alt="Pijama Edición Especial Saramantha" loading="lazy">
           <span class="card-badge">🎁 Top regalo</span>
+
+          <a href="https://wa.me/c/573235753226" class="card-img-overlay" onclick="fbq&&fbq('track','AddToCart')" aria-label="Ver precio por WhatsApp">
+            <span class="card-img-overlay-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ver precio</span>
+          </a>
         </div>
         <div class="card-body">
           <div class="card-name">Pijama Edición Especial</div>
@@ -1355,7 +1540,7 @@ fbq('track', 'PageView');
           <tr>
             <td>Inicio</td>
             <td><strong>6 und</strong> <small style="color:var(--texto-soft)">Media docena</small></td>
-            <td class="price-tag">$21.500</td>
+            <td><a href="https://wa.me/c/573235753226" class="price-tag-link" onclick="fbq&&fbq('track','InitiateCheckout')" title="Hacer pedido por WhatsApp">$21.500 <span class="price-tap-hint">PEDIR</span></a></td>
             <td>$129.000</td>
             <td>$123.000</td>
             <td class="margen-tag">95%</td>
@@ -1364,7 +1549,7 @@ fbq('track', 'PageView');
           <tr class="popular">
             <td><strong>Popular</strong> <span class="popular-badge">⭐</span></td>
             <td><strong>12 und</strong> <small style="color:var(--texto-soft)">1 docena</small></td>
-            <td class="price-tag">$19.500</td>
+            <td><a href="https://wa.me/c/573235753226" class="price-tag-link" onclick="fbq&&fbq('track','InitiateCheckout')" title="Precio mayorista por WhatsApp">$19.500 <span class="price-tap-hint">POPULAR</span></a></td>
             <td>$234.000</td>
             <td>$270.000</td>
             <td class="margen-tag">115%</td>
@@ -1373,7 +1558,7 @@ fbq('track', 'PageView');
           <tr>
             <td>Distribuidor</td>
             <td><strong>24 und</strong> <small style="color:var(--texto-soft)">2 docenas</small></td>
-            <td class="price-tag">$18.000</td>
+            <td><a href="https://wa.me/c/573235753226" class="price-tag-link" onclick="fbq&&fbq('track','InitiateCheckout')" title="Precio distribuidor por WhatsApp">$18.000 <span class="price-tap-hint">MEJOR</span></a></td>
             <td>$432.000</td>
             <td>$576.000</td>
             <td class="margen-tag">133%</td>
@@ -1653,11 +1838,14 @@ fbq('track', 'PageView');
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<!-- ===== STICKY MOBILE CTA ===== -->
-<div class="sticky-mobile-bar">
-  <a href="https://wa.me/c/573235753226" onclick="fbq&&fbq('track','Lead')">
+<!-- ===== STICKY MOBILE CTA - DUAL ===== -->
+<div class="sticky-mobile-bar" role="navigation" aria-label="Accesos rápidos">
+  <a href="https://wa.me/c/573235753226" class="mayorista" onclick="fbq&&fbq('track','Lead')">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    👉 Ver catálogo — WhatsApp
+    👉 Catálogo Mayorista
+  </a>
+  <a href="https://wa.me/573117757407?text=Hola%2C+quiero+ver+el+cat%C3%A1logo+detal+de+Saramantha" class="detal" onclick="fbq&&fbq('track','ViewContent')">
+    🛍️ Ver Catálogo Detal
   </a>
 </div>
 
@@ -1730,6 +1918,35 @@ fbq('track', 'PageView');
       const id = a.getAttribute('href').slice(1);
       const el = document.getElementById(id);
       if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+
+  /* ===== SCROLL DEPTH TRACKING ===== */
+  (function(){
+    const thresholds = [10, 25, 50, 75, 90];
+    const fired = new Set();
+    function getScrollPct(){
+      const h = document.documentElement;
+      return Math.round((h.scrollTop || document.body.scrollTop) / (h.scrollHeight - h.clientHeight) * 100);
+    }
+    window.addEventListener('scroll', function(){
+      const pct = getScrollPct();
+      thresholds.forEach(t => {
+        if(pct >= t && !fired.has(t)){
+          fired.add(t);
+          if(typeof fbq !== 'undefined') fbq('trackCustom', 'ScrollDepth', {percent: t});
+          if(typeof gtag !== 'undefined') gtag('event', 'scroll_depth', {depth_pct: t});
+        }
+      });
+    }, {passive: true});
+  })();
+
+  /* ===== MOBILE HERO IMAGE CLICK TRACKING ===== */
+  document.querySelectorAll('.hero-visual img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function(){
+      if(typeof fbq !== 'undefined') fbq('track', 'ViewContent');
+      window.location.href = 'https://wa.me/c/573235753226';
     });
   });
 </script>
