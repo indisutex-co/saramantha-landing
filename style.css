@@ -1982,7 +1982,7 @@ a:focus-visible, button:focus-visible {
   background: rgba(255,255,255,.15); outline: none; cursor: pointer;
 }
 .calc-slider::-webkit-slider-thumb {
-  -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%;
+  -webkit-appearance: none; appearance: none; width: 20px; height: 20px; border-radius: 50%;
   background: var(--wine); cursor: pointer; box-shadow: 0 2px 8px rgba(105,31,77,.5);
   transition: transform .15s;
 }
