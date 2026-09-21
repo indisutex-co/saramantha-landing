@@ -782,49 +782,62 @@ body.cms-active #cms-floating-trigger {
    ========================================================================== */
 
 /* Cuando Modo Navidad NO está activo, se ocultan todos los elementos navideños */
-body:not(.modo-navidad) .xmas-only {
+body:not(.modo-navidad) .xmas-only,
+body:not(.modo-navidad) .xmas-lights-garland,
+body:not(.modo-navidad) .xmas-badge,
+body:not(.modo-navidad) #snowCanvas {
   display: none !important;
 }
 
-body.modo-navidad .xmas-only {
-  display: block;
+.hero,
+.catalogo-cta-section {
+  position: relative !important;
 }
 
-/* Guirnalda luminosa */
+/* Guirnalda luminosa horizontal (idéntica a Sublimados Majestic) */
 .xmas-lights-garland {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  pointer-events: none;
-  z-index: 25;
-  height: 34px;
-  overflow: visible;
-  border-top: 2px solid rgba(212, 70, 122, 0.4);
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: flex-start !important;
+  pointer-events: none !important;
+  z-index: 25 !important;
+  height: 34px !important;
+  overflow: visible !important;
+  border-top: 2px solid rgba(212, 70, 122, 0.4) !important;
+  box-sizing: border-box !important;
 }
 
 .xmas-lights-garland::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  height: 12px;
-  border-bottom: 2px solid rgba(60, 60, 60, 0.2);
-  pointer-events: none;
+  content: '' !important;
+  position: absolute !important;
+  top: -8px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 12px !important;
+  border-bottom: 2px solid rgba(60, 60, 60, 0.2) !important;
+  pointer-events: none !important;
 }
 
 .xmas-light {
-  position: relative;
-  width: 11px;
-  height: 18px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  margin-top: 6px;
+  position: relative !important;
+  width: 10px !important;
+  height: 20px !important;
+  border-radius: 50% 50% 45% 45% !important;
+  margin: 0 4px !important;
+  list-style: none !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+  animation-iteration-count: infinite !important;
+  animation-fill-mode: both !important;
 }
 
 .xmas-light::before {
