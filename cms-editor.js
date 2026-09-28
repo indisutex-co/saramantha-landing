@@ -22,6 +22,10 @@
 
   // Galería de imágenes nativas del proyecto Saramantha
   const DEFAULT_GALLERY = [
+    { name: 'Navidad 1 - Mickey Principal (Hero Izq)', url: 'hero-navidad-1.jpg' },
+    { name: 'Navidad 2 - Mickey Detalle (Hero Der Arriba)', url: 'hero-navidad-2.jpg' },
+    { name: 'Navidad 3 - Mickey Modelo (Hero Der Abajo)', url: 'hero-navidad-3.jpg' },
+    { name: 'Navidad - Banner Completo', url: 'hero-navidad.jpg' },
     { name: '10 - Capri Lolita', url: '10Carrusel.jpg' },
     { name: '11 - Capri Lolita 2', url: '11Carrusel.jpg' },
     { name: '12 - Capri Lolita 3', url: '12Carrusel.jpg' },
